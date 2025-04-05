@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script>
+        let list=document.getElementById('list') ;
+        const apiUrl = "https://jasperlinpen.github.io/exercise2/GPTdata.json";
+
+// Fetch data using fetch API
+fetch(apiUrl)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('hTTP錯誤: ${response.status}');
+    }
+    return response.json(); // Convert response to JSON
+  })
+  .then(data => {
+    console.log("Raw JSON Data:", data); // Full JSON response
+
+    // Parsing specific data from the JSON
+    const parsedData = {
+      id:data.id,
+      title:data.title,
+      body:data.body,
+      userId:data.userId
+    };
+
+    console.log("Parsed Data:", parsedData);
+  })
+  .catch(error => {
+    console.error("Fetch Error:", error); // Handle errors
+  });
+   </script> 
+  </head>
+   
+<body>
+<hr/>  
+<span id="list"></span> 
+
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />	
+        <title>即時數位儀表板</title>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="css/styles2.css" rel="stylesheet" />
+        <script type="text/javascript">
+           let firstVisit = true ;     // original value:  true 
+           let refSec = 3000 ; // original value:  0
+        </script>
+    </head>
+    <body>
+    <div class="head-items">
+                <div class="p-item">
+                    <div id="myProgress1"><div id="myBar1"></div></div>
+                </div>    
+                <div class="s-item">
+                    <select id="s01">
+                        <option value="-1">請選擇</option>
+                        <option value="0">STOP</option>
+                        <option value="1">3's</option>
+                        <option value="2">5's</option>
+                        <option value="3">10's</option>
+                        <option value="4">20's</option>
+                        <option value="5">30's</option>
+                        <option value="6">1'm</option>
+                        <option value="7">10'm</option>
+                        <option value="8">15'm</option>
+                        <option value="9">20'm</option>
+                        <option value="10" selected>30'm</option>
+                    </select>
+                </div>
+                <div class="w-item">    
+                    <span class="wi">台指數：<span id="wi-d"></span></span>
+                    <span class="wi" id="wi-c"></span>
+                    <span class="wi" id="wi-o"></span>
+                    <span class="wi" id="wi-h"></span>
+                    <span class="wi" id="wi-l"></span>
+                </div> 
+    </div>  
+
+    <div class="view">
+        <div class="view-items">
+          <div class="ymsitem"> 	
+                <div class="ymsitem-msg" id="ymsitem-msg"></div>
+                <div class="ymsitem-elems">				
+                    <div id="ymsitem-elem1"></div> 
+                    <div id="ymsitem-elem2"></div>
+                </div> 				
+          </div>
+          <div class="data-items"> 
+              <div class="items">
+                  <div class="item-head" id="item-11">&nbsp;</div>
+                  <div class="item" id="item-12">&nbsp;</div>
+                  <div class="item" id="item-13">&nbsp;</div>
+                  <div class="item" id="item-14">&nbsp;</div>
+                  <div class="item" id="item-15">&nbsp;</div>
+              </div> 
+              <div class="items">
+                <div class="item-head" id="item-21">&nbsp;</div>
+                <div class="item" id="item-22">&nbsp;</div>
+                <div class="item" id="item-23">&nbsp;</div>
+                <div class="item" id="item-24">&nbsp;</div>
+                <div class="item" id="item-25">&nbsp;</div>
+            </div> 
+            <div class="items">
+                <div class="item-head" id="item-31">&nbsp;</div>
+                <div class="item" id="item-32">&nbsp;</div>
+                <div class="item" id="item-33">&nbsp;</div>
+                <div class="item" id="item-34">&nbsp;</div>
+                <div class="item" id="item-35">&nbsp;</div>
+            </div>
+            <div class="items">
+                <div class="item-head" id="item-41">&nbsp;</div>
+                <div class="item" id="item-42">&nbsp;</div>
+                <div class="item" id="item-43">&nbsp;</div>
+                <div class="item" id="item-44">&nbsp;</div>
+                <div class="item" id="item-45">&nbsp;</div>
+            </div>  
+         </div> 
+         <div class="data-items"> 
+            <div class="items">
+              <div class="item-head" id="item-51">&nbsp;</div>
+              <div class="item" id="item-52">&nbsp;</div>
+              <div class="item" id="item-53">&nbsp;</div>
+              <div class="item" id="item-54">&nbsp;</div>
+              <div class="item" id="item-55">&nbsp;</div>
+          </div> 
+          <div class="items">
+              <div class="item-head" id="item-61">&nbsp;</div>
+              <div class="item" id="item-62">&nbsp;</div>
+              <div class="item" id="item-63">&nbsp;</div>
+              <div class="item" id="item-64">&nbsp;</div>
+              <div class="item" id="item-65">&nbsp;</div>
+          </div>
+          <div class="items">
+            <div class="item-head" id="item-71">&nbsp;</div>
+            <div class="item" id="item-72">&nbsp;</div>
+            <div class="item" id="item-73">&nbsp;</div>
+            <div class="item" id="item-74">&nbsp;</div>
+            <div class="item" id="item-75">&nbsp;</div>
+        </div>
+        <div class="items">
+          <div class="item-head" id="item-81">&nbsp;</div>
+          <div class="item" id="item-82">&nbsp;</div>
+          <div class="item" id="item-83">&nbsp;</div>
+          <div class="item" id="item-84">&nbsp;</div>
+          <div class="item" id="item-85">&nbsp;</div>
+      </div>   
+       </div>  
+      </div>
+    </div>
+	<script src="js/scripts2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<body>
+<!-- button id="myButton" onclick="alert('OK!')">按鈕</button -->
+<script>
+  // 取得按鈕元素
+const audio = new Audio('coinspill.mp3');
+
+function playMusic() {
+    audio.play();
+}
+
+function stopMusic() {
+    audio.pause();
+    audio.currentTime = 0; // 重置播放時間到開頭
+}
+ 
+</script>
+</body>
+</html>

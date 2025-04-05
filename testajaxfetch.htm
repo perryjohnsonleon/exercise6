@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script>
+     const apiUrl = "https://ws.api.cnyes.com/ws/api/v1/charting/history?resolution=1&symbol=TWS:1102:STOCK&quote=1";
+
+      // Fetch data using fetch API
+fetch(apiUrl)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.json(); // Convert response to JSON
+  })
+  .then(result => {
+    console.log("Raw JSON Data:", result); // Full JSON response
+
+    // Parsing specific data from the JSON
+    const parsedData = {
+      price: result.data
+    };
+
+    console.log("Parsed Data:", parsedData);
+  })
+  .catch(error => {
+    console.error("Fetch Error:", error); // Handle errors
+  });
+   </script> 
+  </head>
+   
+<body>
+<hr/>  
+<span id="list"></span> 
+
+
+</body>
+</html>

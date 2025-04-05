@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script>
+        let list=document.getElementById('list') ;
+        url='https://ws.api.cnyes.com/ws/api/v1/charting/history?resolution=1&symbol=TWS:1102:STOCK&quote=1';
+        fetch(url).then(function(response){
+             return response.json() ;
+        })
+        .then(function(result){
+           // list.innerHTML(result) ;
+            console.log(result.length);
+           for (var i=0 ; i< result.length ; i++){
+                if (i == 2) {
+                        console.log (result[i]) 
+                    }
+           }
+        })
+   </script> 
+  </head>
+   
+<body>
+<hr/>  
+<span id="list"></span> 
+
+
+</body>
+</html>

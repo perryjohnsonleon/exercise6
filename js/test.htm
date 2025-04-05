@@ -1,0 +1,19 @@
+<html>
+<script>
+let url='https://jasperlinpen.github.io/exercise2/flowchart.json' 
+let list= document.getElementById("list") ; 
+fetch(url).then((response)=> {
+    return(response.json) ;   
+ } )
+ .then( (result) => {
+   console.log (list.innerHTML('OK')) ;  
+ }  
+   )
+</script>    
+<body>
+<hr/>  
+<span id="list"></span> 
+
+
+</body>
+</html>

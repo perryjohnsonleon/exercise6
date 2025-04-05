@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script>
+      function Createperson(name,age,gender){
+         this.name=name;
+         this.age=age;
+         this.gender=gender;
+         this.sayName=function(){
+           alert(this.name);
+         }
+         // this.sayName=fun;       
+      } 
+   
+      function fun(){
+        alert(this.name) ; 
+      }
+
+        var per1= new Createperson('Tom',26,'男');
+        var per2= new Createperson('John',26,'男');
+        per2.sayName();
+      //  console.log(per1.sayName == per2.sayName) ; 
+   
+   </script> 
+  </head>
+   
+<body>
+<hr/>  
+<span id="list"></span> 
+
+
+</body>
+</html>
