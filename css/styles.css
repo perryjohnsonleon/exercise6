@@ -17,7 +17,6 @@ body {
 <!-- .wi {color:ffb300;font-weight:bold;font-size:20px} --> 
 .head-items {
   display:flex;
-  justify-content: flex-start;
 }
 
 .p-item {
@@ -26,15 +25,9 @@ body {
   margin:5px ;
 }
 
-.w-item {
-  flex:none;
-  width:30%;
-  margin:5px ;
-}
-
 .s-item {
   flex:none;
-  width:8%;
+  width:20%;
   margin:5px ;
 }
 
@@ -61,22 +54,15 @@ body {
   width:25%;
 }
 
-.wi {
+.wi,.item {
  background-color:#003344;
  color:#FFB300;
- font-size:14px;
+ font-weight:bold;
+ font-size:16px;border-style:solid;
+ border-color:#007799;
+ border-width:1px;
  width:100%;
 }
-
-.item {
-  background-color:#003344;
-  color:#FFB300;
-  font-size:14px;border-style:solid;
-  border-color:#007799;
-  border-width:1px;
-  width:100%;
- }
-
 
 #wrap {
   background-color: #ddd;
